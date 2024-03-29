@@ -90,24 +90,18 @@ nav ul li a:hover {
 
 /* Banner Styles */
 section.banner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: var(--blue);
   padding: 25px 125px;
-  background-image: url(https://framerusercontent.com/images/Ke7NpmARiH0kaSh2nahFbVZoj0.png);
-  background-position-x: right;
   height: 100vh;
-  background-size: 640px;
-  background-repeat: no-repeat;
 }
 
 section.banner .content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 40px 0;
-  max-width: 50%;
 }
 
 section.banner .content h1 {
@@ -146,8 +140,8 @@ section.banner .content button:nth-child(2) {
 
 /* About Section Styles */
 section.about {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: var(--white);
   padding: 25px 125px;
   justify-content: space-between;
